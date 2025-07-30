@@ -1,0 +1,35 @@
+.flashcard-main-div{
+    width: 500px;
+    height: 500px;
+    border: 5px solid black;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 250ms;
+}
+
+.flashcard-main-div:hover{
+    width: 505px;
+    height: 505px;
+}
+
+.card-div{
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    display: flex;
+}
+
+.card{
+    font-size: 1.5rem;
+    font-family: monospace;
+    user-select: none;
+}
+
+.flashcard-title-div{
+    border-bottom: 2px solid black;
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: monospace;
+    user-select: none;
+}
