@@ -1,18 +1,17 @@
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import './App.css'
-import Flashcard from './components/Flashcard'
+import Home from './pages/Home'
+import Navbar from './components/Navbar'
 
 function App() {
-  
-  const card = {
-    title: "card #1",
-    front: "Front",
-    back: "Back"
-  };
 
   return (
-    <>
-      <Flashcard card={card}></Flashcard>
-    </>
+    <BrowserRouter>
+      <Navbar></Navbar>
+      <Routes>
+        <Route path='/' element={<Home />}/>
+      </Routes>
+    </BrowserRouter>
   )
 }
 
