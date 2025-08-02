@@ -1,4 +1,12 @@
 body{
   display: flex;
   justify-content: center;
+  background-color: white;
+  color: black;
+  transition: 0.3s;
+}
+
+body.dark {
+  background-color: black;
+  color: white;
 }
