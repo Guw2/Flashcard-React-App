@@ -6,17 +6,25 @@ body{
 
 }
 
-.addflashcard-button{
-    padding: 15px;
-    font-family: monospace;
-    font-size: 1.3rem;
-    border-radius: 15px;
-    background-color: rgb(0, 223, 0);
-    border: none;
-    transition: 0.1s ease;
+.addflashcard-button {
+  margin-top: 20px;
+  margin-left: 13px;
+  width: 100%;
+  padding: 14px;
+  background-color: #00ff15;
+  color: #222;
+  border: 3px solid #222;
+  border-radius: 16px;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 4px 4px 0px #222;
+  transition: all 0.2s ease;
 }
 
-.addflashcard-button:hover{
-    background-color: rgb(0, 0, 0);
-    color: white;
+.addflashcard-button:hover {
+  background-color: #000000;
+  color: white;
+  box-shadow: 2px 2px 0px #222;
+  transform: translate(2px, 2px);
 }

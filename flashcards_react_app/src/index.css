@@ -3,9 +3,10 @@ body{
   justify-content: center;
   background-color: white;
   color: black;
+  transition: 0.2s;
 }
 
 body.dark {
-  background-color: black;
+  background-color: rgb(39, 39, 39);
   color: white;
 }
