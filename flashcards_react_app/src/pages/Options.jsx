@@ -2,12 +2,9 @@ import '../css/Options.css'
 import React, { useEffect, useState } from 'react';
 
 function Options() {
-  const [darkMode, setDarkMode] = useState(false);
-
-  useEffect(() => {
-    const isDarkNow = localStorage.getItem("darkItem") === "true";
-    setDarkMode(isDarkNow);
-  }, []);
+  const [darkMode, setDarkMode] = useState(() => {
+    return localStorage.getItem("darkItem") === "true";
+  });
 
   useEffect(() => {
     document.body.classList.toggle("dark", darkMode);

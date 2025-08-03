@@ -1,3 +1,22 @@
 body{
-    padding-top: 60px;
+    padding-top: 30px;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+
+}
+
+.addflashcard-button{
+    padding: 15px;
+    font-family: monospace;
+    font-size: 1.3rem;
+    border-radius: 15px;
+    background-color: rgb(0, 223, 0);
+    border: none;
+    transition: 0.1s ease;
+}
+
+.addflashcard-button:hover{
+    background-color: rgb(0, 0, 0);
+    color: white;
 }
