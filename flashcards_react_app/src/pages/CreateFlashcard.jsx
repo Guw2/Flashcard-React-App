@@ -3,12 +3,18 @@ import styles from '../css/CreateFlashcard.module.css';
 
 function CreateFlashcard() {
 
+  const title = useRef("card");
   const front = useRef("");
   const back = useRef("");
 
   function create() {
 
+    if(title.current == ""){
+      title.current = "card";
+    }
+
     const newCard = {
+      title: title.current,
       front: front.current,
       back: back.current,
     };
@@ -23,6 +29,9 @@ function CreateFlashcard() {
     <div className={styles.mainDiv}>
       <h1 className={styles.title}>Add Flashcard</h1>
       <form action="/my-flashcards" className={styles.form}>
+        <label htmlFor="title">Title</label>
+        <input id="title" type="text" name="title" onChange={e => {title.current = e.target.value}} />
+
         <label htmlFor="front">Front</label>
         <input id="front" type="text" name="front" onChange={e => {front.current = e.target.value}} />
 

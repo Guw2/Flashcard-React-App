@@ -9,7 +9,7 @@
 
 .flashcardShow {
   width: 220px;
-  background-color: #ffffff; /* verde claro */
+  background-color: #ffffff;
   border: 4px solid #000000;
   border-radius: 16px;
   box-shadow: 6px 6px 0px #000000;
@@ -22,7 +22,6 @@
 
 .flashcardShow:hover {
   transform: scale(1.03);
-  background-color: #c3f5be; /* um pouco mais escuro ao hover */
 }
 
 .frontDiv {
@@ -59,4 +58,8 @@
   white-space: nowrap;
   cursor: default;
   user-select: none;
+}
+
+.title{
+  text-align: center;
 }

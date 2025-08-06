@@ -12,6 +12,7 @@ function MyFlashcards() {
 
   const list = flashcards.map((x, index) =>
     <div key={index} className={styles.flashcardShow}>
+      <div className={styles.title}>{x.title}</div>
       <div className={styles.frontDiv}>
         <label>Front</label>
         <p>{x.front}</p>
