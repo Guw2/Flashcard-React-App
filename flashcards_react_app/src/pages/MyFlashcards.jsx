@@ -8,11 +8,13 @@ function MyFlashcards() {
 
   useEffect(() => {
     console.log(flashcards);
-  }, [flashcards]); // adicionei a dependência para evitar chamadas infinitas
+  }, [flashcards]);
 
   const list = flashcards.map((x, index) =>
     <div key={index} className={styles.flashcardShow}>
-      <div className={styles.title}>{x.title}</div>
+      <div className={styles.title}>
+        <p>{x.title}</p>
+      </div>
       <div className={styles.frontDiv}>
         <label>Front</label>
         <p>{x.front}</p>
