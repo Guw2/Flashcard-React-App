@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import Options from './pages/Options'
 import CreateFlashcard from './pages/CreateFlashcard'
 import MyFlashcards from './pages/MyFlashcards'
+import Study from './pages/Study'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
         <Routes>
             <Route path='/' element={<Home />}/>
             <Route path='/options' element={<Options />} />
+            <Route path='/study' element={<Study />} />
             <Route path='/my-flashcards' element={<MyFlashcards />} />
             <Route path='/create-flashcard' element={<CreateFlashcard />} />
         </Routes>
