@@ -52,7 +52,7 @@ function Flashcard({card}){
                     </div>
                 </div>
             </div>
-            <button onClick={nextCard} hidden={isTurned ? false : true}>Next</button>
+            <button onClick={nextCard} className="next-button" hidden={isTurned ? false : true}>Next</button>
         </>
     );
 
