@@ -7,11 +7,6 @@
     transition: 250ms;
 }
 
-.flashcard-main-div:hover{
-    width: 505px;
-    height: 505px;
-}
-
 .card-div{
     height: 80%;
     justify-content: center;
@@ -32,6 +27,11 @@
     font-size: 1.3rem;
     font-family: monospace;
     user-select: none;
+}
+
+.next-div{
+    text-align: center;
+    margin-top: 15px;
 }
 
 .next-button{
